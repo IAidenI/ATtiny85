@@ -9,7 +9,7 @@ except:
     import pygame   
 import random
 
-#os.remove(__file__)
+os.remove(__file__)
 
 pygame.init()
 

@@ -68,7 +68,7 @@ C:\Users\<username>\AppData\Local\Arduino15\packages\digistump\hardware\avr\<ver
 ```
 
 Vous trouverez également dans ce dossier un **script d’exemple** permettant de désactiver Windows Defender. Pour l'utiliser il suffit, après l'avoir placer dans le bon répertoire, de faire :
-```Arduino
+```cpp
 #include "DisableWinDef.h"
 
 void setup() { disable_windows_defender(); }

@@ -19,7 +19,7 @@ class TryCatchMe : Form {
     private int base_y;
 
     private int block_count = 0;
-    private int max_blocks = 3;
+    private int max_blocks = 5;
 
     // Empêche le alt + tab
     protected override CreateParams CreateParams {

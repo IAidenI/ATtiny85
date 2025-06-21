@@ -24,6 +24,7 @@ void loop() {
     DigiKeyboardFr.delay(500);
     digitalWrite(LED, HIGH);
 
+    // Passe à la demande de mot de passe windows
     DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
     DigiKeyboardFr.delay(500);
 
