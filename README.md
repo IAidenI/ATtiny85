@@ -19,6 +19,7 @@ Les modules **Digispark ATtiny85** sont des microcontrôleurs compacts compatibl
 - [Schéma de soudure](#schéma-de-soudure)
 - [Installation & Programmation](#installation--programmation)
 - [Conseils & Astuces](#conseils--astuces)
+- [Disclaimer](#disclaimer)
 - [Liens utiles](#liens-utiles)
 
 ## Matériel requis
@@ -108,6 +109,16 @@ void loop() {}
 <p align="center">
   <img src="./src/images/Arduino_upload.png" width="500"/>
 </p>
+
+## Disclaimer ⚠️
+
+Ce projet est fourni **à des fins purement éducatives et démonstratives**.  
+Il ne doit en aucun cas être utilisé à des fins malveillantes, intrusives ou illégales.
+
+L’auteur décline toute responsabilité en cas d’usage abusif ou contraire à la législation en vigueur.  
+**Utilisez ce type d’outil uniquement dans un cadre légal, éthique, et avec le consentement explicite des personnes concernées.**
+
+🔐 L’objectif est de sensibiliser à la sécurité des systèmes informatiques et d’en comprendre les failles pour mieux s’en protéger.
 
 ## Liens utiles
 
